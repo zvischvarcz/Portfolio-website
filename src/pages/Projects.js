@@ -9,9 +9,11 @@ const Projects = () => {
                 return (
                     <div key={index} className="eachProjectWrap">
                         <h3>{project.name}</h3>
-                        <img className="projectImg" alt="page screenshot" src={project.img} />
-                        <p>{project.desc}</p>
-                        <a href={project.link}>GitHub Repository</a>
+                        <img className="projectImg"  alt="page screenshot" src={project.img} />
+                        <div className="descWrap">
+                            <p>{project.desc}</p>
+                        </div>
+                        <a className="projGitHubLink" href={project.link} target="_blank" rel="noreferrer">GitHub Repository</a>
 
                     </div>
                 )
