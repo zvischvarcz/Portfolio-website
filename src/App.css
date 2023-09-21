@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+
+
+.pageTitle {
+  font-family: 'Kenia', cursive;
+  text-align: center;
+  font-size: 4vw;
+  color: rgb(161, 161, 161);
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.pageDesc {
+  font-family: 'Kenia', cursive;
+  text-align: center;
+  color: rgb(161, 161, 161);
+}
 
 
 
@@ -47,6 +64,38 @@
 }
 
 
+/* ↓↓ Contact page ↓↓ */
+
+.contactWrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: rgb(161, 161, 161);
+  height: 60vh;;
+}
+.contactWrap > a > img, .contactWrap > label > a > img, .contactWrap > label > img, .contactWrap > img {
+  width: 15vw;
+}
+
+.contactWrap > label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactWrap > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(161, 161, 161);
+  text-decoration: none;
+} 
+
+.copyIcon{
+  max-width: 2vw;
+  cursor: pointer;
+}
 
 /* ↓↓ Screen width Sizing ↓↓ */
 
@@ -59,6 +108,11 @@
   }
   .descWrap {
     max-width: 85vw;
+  }
+
+  .contactWrap{
+    display: flex;
+    flex-direction: column;
   }
 }
 
