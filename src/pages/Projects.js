@@ -6,7 +6,7 @@ const Projects = () => {
     return (
         <div>
             <h1 className="pageTitle">Projects</h1>
-            <p className="pageDesc">Here You will find a breif overview of some of my projects.</p>
+            <p className="pageDesc">Here you will find a brief overview of some of my projects.</p>
             <div className="allProjectsWrap">
                 {projectArray.map((project, index) => {
                     return (
