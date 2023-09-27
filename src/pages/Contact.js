@@ -1,9 +1,9 @@
 import React from "react";
-import githubLogo from "../Resorces/github-mark-white.svg";
-import linkedLogo from "../Resorces/LI-In-Bug.png"
-import gmailLogo from "../Resorces/Gmail_icon_(2020).svg";
-import phoneImg from "../Resorces/phone.svg";
-import copyIcon from "../Resorces/copy_clipboard_icon.png";
+import githubLogo from "../resorces/github-mark-white.svg";
+import linkedLogo from "../resorces/LI-In-Bug.png"
+import gmailLogo from "../resorces/Gmail_icon_(2020).svg";
+import phoneImg from "../resorces/phone.svg";
+import copyIcon from "../resorces/copy_clipboard_icon.png";
 import { Tooltip } from "@mui/material";
 
 const Contact = () => {

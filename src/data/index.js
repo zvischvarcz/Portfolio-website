@@ -3,6 +3,9 @@ import countriesImg from "./projectImages/countries.png"
 import diceImg from "./projectImages/diceGame.png"
 import lockheedImg from "./projectImages/lockheedM.png"
 import booksSql from "./projectImages/sqlBooks.png"
+import musikaImg from "./projectImages/musika.png"
+import keycodeImg from "./projectImages/keycode.png"
+import pythonRpgImg from "./projectImages/python-rpg.png"
 
 
 export const projectArray = [
@@ -11,6 +14,12 @@ export const projectArray = [
         link: "https://github.com/zvischvarcz/REACT-to-do-list",
         img: toDoImg,
         desc: "A simple to-do list built with REACT. A user can cross things off, archive items and more."
+    },
+    {
+        name: "Musika, music website",
+        link: "https://github.com/zvischvarcz/M49-Music-App-Back-End",
+        img: musikaImg,
+        desc: "This is the backend of a music app built together with 6 other developers. I focused on the backend, but also helped out with the frontend. It features music search using the spotify api, live radio and upcoming events from favourite artists."
     },
     {
         name: "API-Challenge",
@@ -25,6 +34,12 @@ export const projectArray = [
         desc: "This is a dice game that has both 1 player and 2 player versions. Instructions on how to play can be found in the readme."
     },
     {
+        name: "python_text_based_rpg",
+        link: "https://github.com/zvischvarcz/python_text_based_rpg",
+        img: pythonRpgImg,
+        desc: "An in terminal role player game set in a jungle. writen in Python in conjunction with 5 other developers."
+    },
+    {
         name: "Lockheeed-martin-clone",
         link: "https://github.com/zvischvarcz/Lockheeed-martin-clone",
         img: lockheedImg,
@@ -36,4 +51,10 @@ export const projectArray = [
         img: booksSql,
         desc: "A books database management system built with Express, Sequelize and SQL. This showcases how relational databses work. There is a front end built with REACT linkes in the repo."
     },
+    {
+        name: "keycodeGenerator",
+        link: "https://github.com/zvischvarcz/keycodeGenerator",
+        img: keycodeImg,
+        desc: "A website to display the different javaScript event values for any key pressed."
+    }
 ]

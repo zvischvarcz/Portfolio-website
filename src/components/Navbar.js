@@ -7,6 +7,8 @@ function Navbar() {
       <nav className="navWrap">
         <Link className="navBarOptionText" to="/">Home</Link>
 
+        <Link className="navBarOptionText" to="/about">About Me</Link>
+
         <Link className="navBarOptionText" to="/projects">Projects</Link>
 
         <Link className="navBarOptionText" to="/contact">Contact</Link>
