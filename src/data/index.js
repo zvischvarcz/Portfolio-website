@@ -37,7 +37,7 @@ export const projectArray = [
         name: "python_text_based_rpg",
         link: "https://github.com/zvischvarcz/python_text_based_rpg",
         img: pythonRpgImg,
-        desc: "An in terminal role player game set in a jungle. writen in Python in conjunction with 5 other developers."
+        desc: "An in-terminal role player game set in a jungle. Created with Python in conjunction with 5 other developers."
     },
     {
         name: "Lockheeed-martin-clone",
@@ -49,7 +49,7 @@ export const projectArray = [
         name: "Sequelize-SQL Books",
         link: "https://github.com/zvischvarcz/Sequelize-SQL",
         img: booksSql,
-        desc: "A books database management system built with Express, Sequelize and SQL. This showcases how relational databses work. There is a front end built with REACT linkes in the repo."
+        desc: "A books database management system built with Express, Sequelize and SQL. This showcases how relational databses work. There is a front end built with REACT linked in the repo."
     },
     {
         name: "keycodeGenerator",

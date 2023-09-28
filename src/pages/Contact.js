@@ -17,7 +17,7 @@ const Contact = () => {
       }
 
     return (
-        <div>
+        <div className="ContactPageWrap">
             <h1 className="pageTitle">Contact me</h1>
             <p className="pageDesc">Please feel free to contact me using one of the methods below.</p>
             <div className="contactWrap">

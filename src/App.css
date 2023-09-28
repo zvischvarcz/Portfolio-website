@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Kenia&display=swap');
 
 
 .pageTitle {
@@ -14,6 +14,7 @@
   font-family: 'Kenia', cursive;
   text-align: center;
   color: rgb(161, 161, 161);
+  font-size: larger;
 }
 
 
@@ -26,12 +27,17 @@
   color: white;
   min-height: 5vh;
   padding: 0 2vw;
+  border-bottom: 1px solid teal;
 }
 
 .navBarOptionText {
   color: white;
   text-decoration: none;
   padding: 0 1vw;
+}
+
+.navBarOptionText:hover {
+  color: teal;
 }
 
 /* ↓↓ Project Page ↓↓ */
@@ -44,12 +50,13 @@
 }
 
 .eachProjectWrap{
-  background-color: rgb(42, 42, 42);
+  background-color: rgba(42, 42, 42, 0.70);
   color: rgb(161, 161, 161);
   padding: 2vh 2vw;
   margin: 2vh 1vw;
   max-width: 40vw;
   border-radius: 5px;
+  border: 1px solid teal;
 }
 
 .projectImg {
@@ -59,6 +66,10 @@
   max-width: 35vw;
 }
 
+.pageDesc > a {
+  color: rgb(161, 161, 161);;
+}
+
 .projGitHubLink {
   color: rgb(161, 161, 161);
 }
@@ -66,16 +77,28 @@
 
 /* ↓↓ Contact page ↓↓ */
 
+.ContactPageWrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .contactWrap{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   color: rgb(161, 161, 161);
-  height: 60vh;;
+  background-color: rgba(42, 42, 42, 0.397);
+  height: 45vh;;
+  width: 80vw;
+  border: 1px solid teal;
+  margin-top: 10vh;
 }
 .contactWrap > a > img, .contactWrap > label > a > img, .contactWrap > label > img, .contactWrap > img {
   width: 15vw;
 }
+
+
 
 .contactWrap > label {
   display: flex;
@@ -91,6 +114,7 @@
   color: rgb(161, 161, 161);
   text-decoration: none;
 } 
+
 .nameCopyWrap {
   padding-top: 2vh;
   display: flex;
@@ -101,7 +125,7 @@
 }
 
 .copyIcon{
-  max-width: 1.5vw;
+  max-width: 1.8vw;
   cursor: pointer;
 }
 
@@ -121,6 +145,7 @@
   .contactWrap{
     display: flex;
     flex-direction: column;
+    height: 60vh;
   }
 
   .copyIcon{
