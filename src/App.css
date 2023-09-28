@@ -91,9 +91,17 @@
   color: rgb(161, 161, 161);
   text-decoration: none;
 } 
+.nameCopyWrap {
+  padding-top: 2vh;
+  display: flex;
+  align-items: center;
+}
+.nameCopyWrap > img {
+  margin-left: 0.5vw;
+}
 
 .copyIcon{
-  max-width: 2vw;
+  max-width: 1.5vw;
   cursor: pointer;
 }
 
@@ -113,6 +121,11 @@
   .contactWrap{
     display: flex;
     flex-direction: column;
+  }
+
+  .copyIcon{
+    max-width: 4vw;
+    cursor: pointer;
   }
 }
 
