@@ -1,12 +1,14 @@
 import React from "react";
+import zviImg from "../Resorces/zviPic.jpg"
 
 const About = () => {
 
     return (
         <div>
         <h1 className="pageTitle">About me</h1>
-        <p className="pageDesc">xxxxxxx xxxx xxxxxx About me xxxxxxx xxxxxxxx xxxxx xxxxx xxx</p>
-
+            <div className="aboutPageContents">
+                <img className="zviImg" src={zviImg} alt="me" />
+            </div>
         </div>
     )
 }
