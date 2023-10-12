@@ -30,14 +30,48 @@
   border-bottom: 1px solid teal;
 }
 
-.navBarOptionText {
+.navBarOptionText, .menuNavBarOptionText {
   color: white;
   text-decoration: none;
   padding: 0 1vw;
 }
 
+.menuNavBarOptionText{
+  border-top: 1px solid teal;
+  width: 100%;
+  text-align: center;
+  padding: 1vh;
+}
+
+.menuModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  background-color: black;
+  border: 1px solid teal;
+}
+
+.modalOverlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+
 .navBarOptionText:hover {
   color: teal;
+}
+
+.menuIcon{
+  max-height: 5vh;
+  display: none;
+  cursor: pointer;
 }
 
 /* ↓↓ Project Page ↓↓ */
@@ -89,13 +123,14 @@
   justify-content: space-evenly;
   color: rgb(161, 161, 161);
   background-color: rgba(42, 42, 42, 0.397);
-  height: 45vh;;
+  height: 45vh;
   width: 80vw;
   border: 1px solid teal;
   margin-top: 10vh;
 }
 .contactWrap > a > img, .contactWrap > label > a > img, .contactWrap > label > img, .contactWrap > img {
   width: 15vw;
+  margin-top: 5vh;
 }
 
 
@@ -133,6 +168,7 @@
 
 .constructionImg {
   max-width: 80vw;
+  margin-left: 5vw;
 }
 
 /* ↓↓ About Page ↓↓ */
@@ -142,17 +178,36 @@
   flex-direction: column;
   align-items: center;
 }
+.aboutPageContents > p {
+  color: white;
+  margin: 0;
+  padding: 0;
+  max-width: 50vw;
+}
+
+.codenationLink{
+  color: white;
+}
 
 .zviImg {
   max-width: 20vw;
   border-radius: 50%;
   border: 2px solid teal;
+  margin-bottom: 2vh;
 
 }
 
 /* ↓↓ Screen width Sizing ↓↓ */
 
 @media only screen and (max-width: 800px) {
+  .navBarOptionText {
+    display: none; 
+  }
+
+  .menuIcon{
+    display: block;
+  }
+
   .eachProjectWrap {
     max-width: 90vw;
   }
@@ -166,13 +221,16 @@
   .contactWrap{
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    height: fit-content;
+    padding-bottom: 2vh;
   }
 
   .copyIcon{
     max-width: 4vw;
     cursor: pointer;
   }
+
+
 }
 
 
