@@ -203,6 +203,12 @@
   .navBarOptionText {
     display: none; 
   }
+  .aboutPageContents > p {
+    text-align: justify;
+    min-width: 80vw;
+    padding: 0;
+    margin: 0;
+  }
 
   .menuIcon{
     display: block;
