@@ -28,15 +28,20 @@ function Navbar() {
     
     return (
       <nav className="navWrap">
+        <div>
+          <Link className="zviLogo" to="/">ZVI</Link>
+        </div>
         <img className="menuIcon" src={menuIcon} alt="menu" onClick={openCloseMenu}/>
+        
+        <div>
+          <Link className="navBarOptionText" to="/">Home</Link>
 
-        <Link className="navBarOptionText" to="/">Home</Link>
+          <Link className="navBarOptionText" to="/about">About Me</Link>
 
-        <Link className="navBarOptionText" to="/about">About Me</Link>
+          <Link className="navBarOptionText" to="/projects">Projects</Link>
 
-        <Link className="navBarOptionText" to="/projects">Projects</Link>
-
-        <Link className="navBarOptionText" to="/contact">Contact</Link>
+          <Link className="navBarOptionText contactButton" to="/contact">Contact</Link>
+        </div>
         <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}

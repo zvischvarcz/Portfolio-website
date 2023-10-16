@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Kenia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 
 
 .pageTitle {
@@ -23,17 +24,25 @@
 .navWrap {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: black;
   color: white;
   min-height: 5vh;
   padding: 0 2vw;
   border-bottom: 1px solid teal;
 }
+.zviLogo {
+  font-family: 'Yellowtail', cursive;
+  color: white;
+  text-decoration: none;
+  font-size: x-large;
+}
 
 .navBarOptionText, .menuNavBarOptionText {
   color: white;
   text-decoration: none;
   padding: 0 1vw;
+  margin: 0 1.5vw;
 }
 
 .menuNavBarOptionText{
@@ -72,6 +81,17 @@
   max-height: 5vh;
   display: none;
   cursor: pointer;
+}
+
+.contactButton {
+  background-color: teal;
+  border: 1px solid teal;
+  border-radius: 5px;
+  padding: 0.7vh 1vw;
+}
+
+.contactButton:hover {
+  background-color: white;
 }
 
 /* ↓↓ Project Page ↓↓ */
@@ -229,17 +249,30 @@
   .navBarOptionText {
     display: none; 
   }
-  .aboutPageContents > p {
+  .aboutPagePWrap > p {
     
     flex-direction: column;
     text-align: justify;
-    min-width: 80vw;
+    min-width: 70vw;
     padding: 0;
     margin: 0;
+    font-size: larger;
+  }
+
+  .lastText > p {
+    font-size: smaller;
+  }
+
+  .aboutPagePWrap > img {
+    max-width: 80vw;
+    max-height: 40vh;
+    border: 1px solid teal;
+    margin: 3vh 0;
   }
 
   .menuIcon{
     display: block;
+    margin-left: 80%;
   }
 
   .eachProjectWrap {
@@ -264,7 +297,13 @@
     cursor: pointer;
   }
 
+  .aboutPagePWrap {
+    flex-direction: column;
+  }
 
+  .mobileColumnReverse {
+    flex-direction: column-reverse;
+  }
 }
 
 
