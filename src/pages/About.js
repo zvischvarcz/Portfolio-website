@@ -1,6 +1,10 @@
 import React from "react";
 import zviImg from "../Resorces/zviPic.jpg"
 import { Link} from "react-router-dom";
+import pythonLogo from "../Resorces/python-logo.png"
+import mergedLogos from "../Resorces/merged logos.png"
+import mergedBackendLogo from "../Resorces/expressSqlMongo.png"
+import musikaScreenshot from "../Resorces/musika-sreenshot.png"
 
 const About = () => {
 
@@ -8,11 +12,34 @@ const About = () => {
         <div>
             <h1 className="pageTitle">About me</h1>
             <div className="aboutPageContents">
-                <img className="zviImg" src={zviImg} alt="me" />
-                <p> Hi, I am an aspiring junior software developer based in Manchester, UK. After working for 3 &frac12; years as a sales assistant I decided it was time to change my career path. So I left and joined <a href="https://wearecodenation.com/" className="codenationLink">Codenation</a> to begin the process of becoming a junior developer.</p><br/> 
-                <p>I started with the Software: Develop 3 week course and learned the basics of HTML, CSS and Python. You can check out the in-teminal RPG that I created with the rest of my cohort in the <Link className="codenationLink" to="/projects">projects</Link> page.</p><br/> 
-                <p>After that course finished I signed up for the Master: Software 12 week course in which I learnt HTML and CSS amore in depth, then moved on to Javascript, REACT and interacting with API's which I really enjoyed. This took me to the end of the front-end part of the course. The back-end part consisted of Express.js, MongDB, Mongoose, SQL,Sequelize and linking up the front to the Back-end. Although slightly different I really liked this part as well.</p>  <br/>
-                <p>The course culminated with a 2 week group project which was really fun.  All the projects that I made/was involved in can be found in the <Link className="codenationLink" to="/projects">projects</Link> page. </p><br/> <br/> 
+                
+                <div className="aboutPagePWrap">
+                    <img className="zviImg" src={zviImg} alt="me" />
+                    <p>Hello, I'm Zvi Schvarcz, a motivated junior software developer based in Manchester, UK. My journey into the world of coding began after spending 3 ½ years as a sales assistant. Seeking a new challenge, I decided to take the leap and transition into software development, joining <a href="https://wearecodenation.com/" className="codenationLink">Code Nation.</a></p><br/>
+                </div>
+                <div className="aboutPagePWrap">
+                
+                    <p>I embarked on this exciting journey with the Software: Develop 3-week course, where I mastered the basics of HTML, CSS, and Python. Together with my talented cohort, we created an intriguing in-terminal RPG using Python, which you can explore on the <Link className="codenationLink" to="/projects">projects</Link> page.</p>
+                    <img  src={pythonLogo} className="imgBackground" alt="python logo" />
+                </div>
+                <div className="aboutPagePWrap">
+                    <img  src={mergedLogos} className="imgBackground" alt="Html, Css, javascript, node JS and react logos" />
+                    <p>Eager to expand my skillset, I enrolled in the Master: Software 12-week course. Here, I delved deeper into HTML and CSS, was introduced to JavaScript, React, and the world of API integration. The front-end development part of the course was immensely gratifying.</p>
+                </div>
+                <div className="aboutPagePWrap">
+                
+                    <p>The back-end was equally intriguing, as I tackled Express.js, MongoDB, Mongoose, SQL, Sequelize, and the art of connecting front-end and back-end seamlessly.</p><br/>
+                    <img  src={mergedBackendLogo} className="imgBackground" alt="express, mySQL and MongoDB logos" />
+                </div>
+                <div className="aboutPagePWrap">
+                    <img  src={musikaScreenshot} alt="screenshot of Music app project" />
+                    <p>The pinnacle of my learning journey was a 2-week group project that brought all our skills together. You can explore the results of my hard work and collaboration on the <Link className="codenationLink" to="/projects">projects</Link> page.</p><br/>
+                </div>
+                <div className=" lastText">
+                    
+                    <p>I'm passionate about software development and always eager to tackle new challenges. When I'm not coding, you can find me exploring the latest industry trends, working on personal projects, and exploring my hobbies and interests.<br/> Join me on this exciting journey as I continue to grow and learn in the world of software development.</p>
+                    <br/><br/>
+                </div>
             </div>
         </div>
     )
