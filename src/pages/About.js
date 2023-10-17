@@ -25,7 +25,7 @@ const About = () => {
                 </div>
                 <div className="aboutPagePWrap mobileColumnReverse">
                     <img  src={mergedLogos} className="imgBackground" alt="Html, Css, javascript, node JS and react logos" />
-                    <p>Eager to expand my skillset, I enrolled in the Master: Software 12-week course. Here, I delved deeper into HTML and CSS, was introduced to JavaScript, React, and the world of API integration. The front-end development part of the course was immensely gratifying.</p>
+                    <p>Eager to expand my skillset, I enrolled in the Master: Software 12-week bootcamp. Here, I delved deeper into HTML and CSS, was introduced to JavaScript, React, and the world of API integration. The front-end development part of the course was immensely gratifying.</p>
                 </div>
                 <div className="aboutPagePWrap">
                 

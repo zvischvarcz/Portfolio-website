@@ -234,6 +234,10 @@
   color: white;
 }
 
+.codenationLink:hover {
+  color: rgb(176, 176, 176);
+}
+
 .zviImg {
   max-width: 20vw;
   border-radius: 50%;
@@ -251,6 +255,10 @@
 
 .cvDownloadLink {
   color: white;
+}
+
+.cvDownloadLink:hover {
+  color: rgb(176, 176, 176);
 }
 
 /* ↓↓ Screen width Sizing ↓↓ */
