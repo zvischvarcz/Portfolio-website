@@ -58,6 +58,8 @@ function Navbar() {
 
           <Link onClick={closeModal} className="menuNavBarOptionText" to="/projects">Projects</Link>
 
+          <a rel="noreferrer" onClick={closeModal} target="_blank" className="menuNavBarOptionText" href={myCV} >My CV</a>
+
           <Link onClick={closeModal} className="menuNavBarOptionText" to="/contact">Contact</Link>
         </Modal>
       </nav>
