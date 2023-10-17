@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Kenia&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Yellowtail&display=swap');
 
 
 .pageTitle {
@@ -120,9 +120,15 @@
   max-width: 35vw;
 }
 
-.pageDesc > a {
-  color: rgb(161, 161, 161);;
+.pageDesc {
+  font-size: x-large;
+  font-family: 'Permanent Marker', cursive;
 }
+
+
+.pageDesc > a {
+  color: rgb(161, 161, 161);
+}  
 
 .projGitHubLink {
   color: rgb(161, 161, 161);
@@ -241,6 +247,10 @@
   max-width: 68vw;
   text-align: justify;
   font-size: x-large;
+}
+
+.cvDownloadLink {
+  color: white;
 }
 
 /* ↓↓ Screen width Sizing ↓↓ */

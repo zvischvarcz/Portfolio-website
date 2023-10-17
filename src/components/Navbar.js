@@ -2,6 +2,7 @@ import { Link} from "react-router-dom";
 import menuIcon from "../Resorces/menu-burger-icon.svg";
 import { useState } from "react";
 import Modal from 'react-modal';
+import myCV from "../Resorces/CV-Zvi-Schvarcz.pdf"
 
 
 function Navbar() {
@@ -39,6 +40,8 @@ function Navbar() {
           <Link className="navBarOptionText" to="/about">About Me</Link>
 
           <Link className="navBarOptionText" to="/projects">Projects</Link>
+
+          <a rel="noreferrer" target="_blank" className="navBarOptionText" href={myCV} >My CV</a>
 
           <Link className="navBarOptionText contactButton" to="/contact">Contact</Link>
         </div>

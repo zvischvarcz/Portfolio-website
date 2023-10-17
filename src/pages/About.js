@@ -5,6 +5,7 @@ import pythonLogo from "../Resorces/python-logo.png"
 import mergedLogos from "../Resorces/merged logos.png"
 import mergedBackendLogo from "../Resorces/expressSqlMongo.png"
 import musikaScreenshot from "../Resorces/musika-sreenshot.png"
+import myCV from "../Resorces/CV-Zvi-Schvarcz.pdf"
 
 const About = () => {
 
@@ -36,8 +37,9 @@ const About = () => {
                     <p>The pinnacle of my learning journey was a 2-week group project that brought all our skills together. You can explore the results of my hard work and collaboration on the <Link className="codenationLink" to="/projects">projects</Link> page.</p><br/>
                 </div>
                 <div className="lastText">
-                    <p>I'm passionate about software development and always eager to tackle new challenges. When I'm not coding, you can find me exploring the latest industry trends, working on personal projects, and exploring my hobbies and interests.<br/> Join me on this exciting journey as I continue to grow and learn in the world of software development.</p>
+                    <p>I'm passionate about software development and always eager to tackle new challenges. When I'm not coding, you can find me exploring the latest industry trends, working on personal projects, and exploring my hobbies and interests.<br/> Join me on this exciting journey as I continue to grow and learn in the world of software development.<br />To view or download my CV please <a rel="noreferrer" target="_blank" className="cvDownloadLink" href={myCV} >click here.</a></p>
                     <br/><br/>
+                    
                 </div>
             </div>
         </div>
