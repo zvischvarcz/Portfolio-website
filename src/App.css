@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Kenia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@1,700&family=Lemonada:wght@700&family=Permanent+Marker&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Kenia&display=swap');
+
+
 
 .pageTitle {
   font-family: 'Kenia', cursive;
@@ -183,6 +186,72 @@
   max-width: 1.8vw;
   cursor: pointer;
 }
+
+/* ↓↓ Email Form ↓↓ */
+
+.emailForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.star {
+  color: red;
+}
+
+.fieldLabel {
+  color: rgb(161, 161, 161);
+  font-size: larger;
+}
+
+.formInput {
+  margin: 0.2vh 0 2vh;
+  width: 40vw;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid rgb(161, 161, 161);
+  font-family: 'Inter', sans-serif;
+  font-size: larger;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.emailForm > input::-webkit-outer-spin-button,
+.emailForm > input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.emailForm > textarea {
+  height: 10vh;
+}
+
+.submitForm {
+  background-color: #000;
+  color: rgb(161, 161, 161);
+  border: 1px solid rgb(161, 161, 161);
+  font-size: larger;
+  padding: 1vh 2vw;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 1vh 0 5vh;
+}
+
+.submitForm:hover {
+  background-color: rgb(161, 161, 161);
+  color: #000;
+  border: 1px solid #000;
+}
+
+.emailForm > div {
+  display: flex;
+}
+
+.resMsg{
+  margin-left: 2vw;
+  color: rgb(161, 161, 161);
+  max-width: 30vw;
+}
+
 
 /* ↓↓ Home Page ↓↓ */
 

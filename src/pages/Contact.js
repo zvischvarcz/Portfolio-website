@@ -5,6 +5,7 @@ import gmailLogo from "../Resorces/Gmail_icon_(2020).svg";
 import phoneImg from "../Resorces/phone.svg";
 import copyIcon from "../Resorces/copy-svgrepo-com.svg";
 import { Tooltip } from "@mui/material";
+import EmailContactForm from "../components/ContactForm";
 
 const Contact = () => {
 
@@ -35,7 +36,10 @@ const Contact = () => {
                         +44 (0) 7895 052 933<Tooltip title="Copy to clipboard" arrow><img onClick={() => copyTextToClipboard(+447895052933)} className="copyIcon" src={copyIcon} alt="copy text" /></Tooltip>
                     </div>
                 </label>
-                
+            </div>
+            <div>
+                <p className="pageDesc">Or use this form to send me a message directly</p>
+                <EmailContactForm />
             </div>
         </div>
     )
