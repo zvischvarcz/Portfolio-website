@@ -186,9 +186,21 @@
 
 /* ↓↓ Home Page ↓↓ */
 
+.home {
+  color-scheme: light;
+}
+
 .homeTitleWrap {
   display: flex;
   justify-content: center;
+}
+
+.homePageTitleLight {
+  color: #ffffff;
+}
+
+.homePageTitleDark {
+  color: #000;
 }
 
 .homePageTitle {
@@ -208,12 +220,13 @@
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
-  color: #fff;
+  
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 10s linear infinite;
   display: inline-block;
+  color-scheme: only light;
   
 }
 @keyframes textclip {
@@ -245,6 +258,10 @@
   }
 }
 
+.spaceRight {
+  margin-right: 3vw;
+}
+
 .homeBtnsWrap {
   display: flex;
   justify-content: space-around;
@@ -269,8 +286,8 @@
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
-  background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
-    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+  background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
 
 .homeBtns:hover {
@@ -292,7 +309,7 @@
   font-size: x-large;
   color: black;
   text-decoration: none;
-  font-family: 'Playfair Display', serif;
+  /* font-family: 'Playfair Display', serif; */
   font-weight: 600;
 }
 
@@ -439,4 +456,15 @@
     
   }
 
+  .homePageTitle {
+    text-align: center;
+    font-size: 20vw;
+  }
+ 
+
 }
+ /* @media (prefers-color-scheme: dark) {
+     .homePageTitle {
+      color: #000;
+     }
+  } */

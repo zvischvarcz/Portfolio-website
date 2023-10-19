@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import myCV from "../Resorces/CV-Zvi-Schvarcz.pdf"
 
 const Home = () => {
+    const [darkMode, setDarkMode] = useState()
+    useEffect(() => {
+        const a = window.matchMedia("(prefers-color-scheme: dark)");
+        setDarkMode(a.matches);
+    }, [])
     
     const links = [
         {
             name: "About me",
-            desc: "To read about my coding journey click here",
+            desc: "Read about me and my coding journey",
             to: "/about"
         },
         {
@@ -27,9 +32,9 @@ const Home = () => {
     ]
 
     return (
-        <div>
+        <div className="home">
             <div className="homeTitleWrap">
-                <h1 className="homePageTitle">Zvi Schvarcz</h1>
+                <h1 className={darkMode ? "homePageTitle homePageTitleDark" : "homePageTitle homePageTitleLight"}>Zvi Schvarcz</h1>
             </div>
             <div className="homeSubtitle">
                 <span style={{'--i': 1}}>J</span>
@@ -37,8 +42,8 @@ const Home = () => {
                 <span style={{'--i': 3}}>n</span>
                 <span style={{'--i': 4}}>i</span>
                 <span style={{'--i': 5}}>o</span>
-                <span style={{'--i': 6}}>r</span>
-                <span>&nbsp;&nbsp;</span>
+                <span className="spaceRight" style={{'--i': 6}}>r</span>
+                
                 <span style={{'--i': 7}}>S</span>
                 <span style={{'--i': 8}}>o</span>
                 <span style={{'--i': 9}}>f</span>
@@ -46,8 +51,8 @@ const Home = () => {
                 <span style={{'--i': 11}}>w</span>
                 <span style={{'--i': 12}}>a</span>
                 <span style={{'--i': 13}}>r</span>
-                <span style={{'--i': 14}}>e</span>
-                <span>&nbsp;&nbsp;</span>
+                <span className="spaceRight" style={{'--i': 14}}>e</span>
+                
                 <span style={{'--i': 15}}>D</span>
                 <span style={{'--i': 16}}>e</span>
                 <span style={{'--i': 17}}>v</span>
@@ -62,7 +67,7 @@ const Home = () => {
                 {links.map((link, index) => {
                     return (
                         <div key={index} className="homeBtns btn from-right">
-                            <a  href={link.to}  rel={link.to === myCV && "noreferrer"} target={link.to === myCV && "_blank"}>{link.desc}
+                            <a  href={link.to}  rel={link.to === myCV ? "noreferrer" : undefined} target={link.to === myCV ? "_blank" : undefined}>{link.desc}
                             </a>
                         </div>
                     )
