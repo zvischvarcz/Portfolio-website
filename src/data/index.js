@@ -28,7 +28,7 @@ export const projectArray = [
         link: "https://github.com/zvischvarcz/API-Challenge",
         img: countriesImg,
         desc: "I used the restcountries API to get and display information about countries. Built with REACT, it also features sort and search functions.",
-        site: "https://music-app-gamma-lilac.vercel.app/"
+        site: "https://api-challenge-alpha.vercel.app/"
     },
     {
         name: "diceGame",

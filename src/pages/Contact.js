@@ -23,7 +23,7 @@ const Contact = () => {
             <p className="pageDesc">Please feel free to contact me using one of the methods below.</p>
             <div className="contactWrap">
                 <a href="https://github.com/zvischvarcz/" target="_blank" rel="noreferrer"><img src={githubLogo} alt="GitHub logo"/>GitHub</a>
-                <a href="www.linkedin.com/in/zvi-schvarcz" target="_blank" rel="noreferrer"><img src={linkedLogo} alt="LinkedIn logo"/>LinkedIn</a>
+                <a href="https://www.linkedin.com/in/zvi-schvarcz/" target="_blank" rel="noreferrer"><img src={linkedLogo} alt="LinkedIn logo"/>LinkedIn</a>
                 <label>
                     <a href="mailto:zvischvarcz@gmail.com" target="_blank" rel="noreferrer"><img src={gmailLogo} alt="Gmail logo" /></a>
                     <div className="nameCopyWrap">
