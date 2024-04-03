@@ -13,6 +13,7 @@ const EmailContactForm = () => {
         process.env.REACT_APP_PUBLIC_KEY)
         .then((result) => {
             setRes("Thank you for your submission. I will try to respond as soon as possible.")
+            form.current.reset();
         }, (error) => {
             setRes("Unfortunately an error has occured. Please try again later or contact me via one of the above methods")
             console.log(error)
@@ -29,8 +30,8 @@ const EmailContactForm = () => {
         <input className='formInput' type="number" name="number"/>
         <label className='fieldLabel'>Company:</label>
         <input className='formInput' type="text" name="company"/>
-        <label className='fieldLabel'>Message:</label>
-        <textarea className='formInput' name="message" />
+        <label className='fieldLabel'>Message:<sup className="star">*</sup></label>
+        <textarea className='formInput' name="message" required/>
         <div>
         <input className='submitForm' type="submit" value="Send" />
         <p className='resMsg'>{res}</p>
